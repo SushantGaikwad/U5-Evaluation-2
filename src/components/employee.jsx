@@ -24,10 +24,7 @@ const Employee = ()=>{
     }
 
     const showAll = ()=>{
-        fetch(`http://localhost:3001/employee`)
-        .then((res)=> res.json())
-        .then((res)=> setEmployees(res))
-        .then((err)=> console.log(err));
+        getEmployees();
     }
 
 
