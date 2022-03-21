@@ -13,6 +13,7 @@ const Employee = ()=>{
 
   
     useEffect(()=>{
+        setDept(null);
         getEmployees();
     },[]);
 
