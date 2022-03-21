@@ -24,6 +24,7 @@ const Employee = ()=>{
     }
 
     const showAll = ()=>{
+        setDept(null);
         getEmployees();
     }
 
@@ -37,7 +38,24 @@ const Employee = ()=>{
     }
 
     const sort = (order)=>{
-        if(order == "desc")
+        if(dept == null) {
+            if(order == "desc")
+            {
+                console.log(dept);
+            fetch(`http://localhost:3001/employee?_sort=salary&_order=desc`)
+            .then((res)=> res.json())
+            .then((res)=> setEmployees(res))
+            .then((err)=> console.log(err));
+            }
+            else{
+                console.log(dept);
+                fetch(`http://localhost:3001/employee?_sort=salary`)
+                .then((res)=> res.json())
+                .then((res)=> setEmployees(res))
+                .then((err)=> console.log(err));
+            }
+        }
+        else if(order == "desc")
         {
             console.log(dept);
         fetch(`http://localhost:3001/employee?dept=${dept}&_sort=salary&_order=desc`)
@@ -45,13 +63,15 @@ const Employee = ()=>{
         .then((res)=> setEmployees(res))
         .then((err)=> console.log(err));
         }
-        else{
+        else if(order == "asc"){
             console.log(dept);
             fetch(`http://localhost:3001/employee?dept=${dept}&_sort=salary`)
             .then((res)=> res.json())
             .then((res)=> setEmployees(res))
             .then((err)=> console.log(err));
         }
+
+
     }
 
     const handleAdd = ()=>{
@@ -86,7 +106,7 @@ const Employee = ()=>{
             <input placeholder="Type Name" value={name} onChange={(e)=>setName(e.target.value)} />
             <br />
             <span>Department :</span>
-            <input placeholder="Type Department" value={dept} onChange={(e)=>setDept(e.target.value)} />
+            <input placeholder="Type Department" onChange={(e)=>setDept(e.target.value)} />
             <br />
             <span>Gender :</span>
             <input placeholder="Type Gender" value={gender} onChange={(e)=>setGender(e.target.value)} />

@@ -89,6 +89,15 @@
       "salary": 35620,
       "status": false,
       "id": 10
+    },
+    {
+      "name": "SIddharth",
+      "dept": "Finance",
+      "gender": "Male",
+      "role": "Sr",
+      "salary": 1234560,
+      "status": false,
+      "id": 11
     }
   ]
 }
