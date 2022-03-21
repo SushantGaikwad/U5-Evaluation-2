@@ -35,6 +35,22 @@ const Employee = ()=>{
         .then((err)=> console.log(err));
     }
 
+    const sort = (order)=>{
+        if(order == "desc")
+        {
+        fetch(`http://localhost:3001/employee?_sort=salary&_order=desc}`)
+        .then((res)=> res.json())
+        .then((res)=> setEmployees(res))
+        .then((err)=> console.log(err));
+        }
+        else{
+            fetch(`http://localhost:3001/employee?_sort=salary`)
+            .then((res)=> res.json())
+            .then((res)=> setEmployees(res))
+            .then((err)=> console.log(err));
+        }
+    }
+
     const handleAdd = ()=>{
         const payload = {
             name : name,
@@ -86,8 +102,8 @@ const Employee = ()=>{
             <button  onClick={()=> show("IT")}>Show IT</button>
             <button  onClick={()=> show("Finance")}>Show Finance</button>
             <br />
-            <button>Sort By Salary Ascending</button>
-            <button>Sort By Salary Descending</button>
+            <button onClick={()=> sort("asc")}>Sort By Salary Ascending</button>
+            <button onClick={()=> sort("desc")}>Sort By Salary Descending</button>
             {
                 employees.filter((item) => ()=>{
                     if(showAll == false){
