@@ -5,7 +5,7 @@
       "dept": "HR",
       "gender": "Male",
       "role": "HEad",
-      "salary": "120000",
+      "salary": 120000,
       "status": false,
       "id": 1
     },
@@ -14,7 +14,7 @@
       "dept": "Executive",
       "gender": "Male ",
       "role": "SDE",
-      "salary": "5000000",
+      "salary": 5000000,
       "status": false,
       "id": 2
     },
@@ -23,7 +23,7 @@
       "dept": "Marketing",
       "gender": "Male",
       "role": "Jr",
-      "salary": "2000",
+      "salary": 2000,
       "status": false,
       "id": 3
     },
@@ -32,7 +32,7 @@
       "dept": "IT",
       "gender": "Female",
       "role": "SR",
-      "salary": "300000",
+      "salary": 300000,
       "status": false,
       "id": 4
     },
@@ -41,7 +41,7 @@
       "dept": "Finance",
       "gender": "Male",
       "role": "Head",
-      "salary": "52000",
+      "salary": 52000,
       "status": false,
       "id": 5
     },
@@ -50,7 +50,7 @@
       "dept": "Marketing",
       "gender": "Male",
       "role": "Sr",
-      "salary": "536000",
+      "salary": 536000,
       "status": false,
       "id": 6
     },
@@ -59,7 +59,7 @@
       "dept": "IT",
       "gender": "Male",
       "role": "Head",
-      "salary": "2362000",
+      "salary": 2362000,
       "status": false,
       "id": 7
     },
@@ -68,9 +68,27 @@
       "dept": "Finance",
       "gender": "Male",
       "role": "Sr",
-      "salary": "23600",
+      "salary": 23600,
       "status": false,
       "id": 8
+    },
+    {
+      "name": "Gajanan",
+      "dept": "HR",
+      "gender": "Male",
+      "role": "Sr",
+      "salary": 12365,
+      "status": false,
+      "id": 9
+    },
+    {
+      "name": "Sujay",
+      "dept": "IT",
+      "gender": "Male",
+      "role": "Jr",
+      "salary": 35620,
+      "status": false,
+      "id": 10
     }
   ]
 }

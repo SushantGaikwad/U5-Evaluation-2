@@ -29,6 +29,7 @@ const Employee = ()=>{
 
 
     const show = (dept)=>{
+        setDept(dept);
         fetch(`http://localhost:3001/employee?dept=${dept}`)
         .then((res)=> res.json())
         .then((res)=> setEmployees(res))
@@ -38,13 +39,15 @@ const Employee = ()=>{
     const sort = (order)=>{
         if(order == "desc")
         {
-        fetch(`http://localhost:3001/employee?_sort=salary&_order=desc}`)
+            console.log(dept);
+        fetch(`http://localhost:3001/employee?dept=${dept}&_sort=salary&_order=desc`)
         .then((res)=> res.json())
         .then((res)=> setEmployees(res))
         .then((err)=> console.log(err));
         }
         else{
-            fetch(`http://localhost:3001/employee?_sort=salary`)
+            console.log(dept);
+            fetch(`http://localhost:3001/employee?dept=${dept}&_sort=salary`)
             .then((res)=> res.json())
             .then((res)=> setEmployees(res))
             .then((err)=> console.log(err));
@@ -92,7 +95,7 @@ const Employee = ()=>{
             <input placeholder="Type Role" value={role} onChange={(e)=>setRole(e.target.value)} />
             <br />
             <span>Salary :</span>
-            <input placeholder="Type Salary" value={salary} onChange={(e)=>setSalary(e.target.value)} />
+            <input placeholder="Type Salary" value={salary} onChange={(e)=>setSalary(parseInt(e.target.value))} />
             <br />
             <button onClick={handleAdd}> Save</button>
             <br />
