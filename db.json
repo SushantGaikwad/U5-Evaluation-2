@@ -1,0 +1,76 @@
+{
+  "employee": [
+    {
+      "name": "Sushant",
+      "dept": "HR",
+      "gender": "Male",
+      "role": "HEad",
+      "salary": "120000",
+      "status": false,
+      "id": 1
+    },
+    {
+      "name": "Swapnil ",
+      "dept": "Executive",
+      "gender": "Male ",
+      "role": "SDE",
+      "salary": "5000000",
+      "status": false,
+      "id": 2
+    },
+    {
+      "name": "Sourabh",
+      "dept": "Marketing",
+      "gender": "Male",
+      "role": "Jr",
+      "salary": "2000",
+      "status": false,
+      "id": 3
+    },
+    {
+      "name": "Sugandhi",
+      "dept": "IT",
+      "gender": "Female",
+      "role": "SR",
+      "salary": "300000",
+      "status": false,
+      "id": 4
+    },
+    {
+      "name": "Ganeshq",
+      "dept": "Finance",
+      "gender": "Male",
+      "role": "Head",
+      "salary": "52000",
+      "status": false,
+      "id": 5
+    },
+    {
+      "name": "Sanjay",
+      "dept": "Marketing",
+      "gender": "Male",
+      "role": "Sr",
+      "salary": "536000",
+      "status": false,
+      "id": 6
+    },
+    {
+      "name": "Aman",
+      "dept": "IT",
+      "gender": "Male",
+      "role": "Head",
+      "salary": "2362000",
+      "status": false,
+      "id": 7
+    },
+    {
+      "name": "Jagdish",
+      "dept": "Finance",
+      "gender": "Male",
+      "role": "Sr",
+      "salary": "23600",
+      "status": false,
+      "id": 8
+    }
+  ]
+}

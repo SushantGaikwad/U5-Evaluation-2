@@ -1,0 +1,26 @@
+span{
+    width: 200px;
+}
+
+.main span{
+    display: inline-block;
+color: red;
+width: 100px;
+margin-right: 50px;
+}
+
+input{
+    /* margin-left: 20px; */
+}
+button{
+    margin-top: 20px;
+    margin-left: 120px;
+}
+
+.emp-card{
+    border: 1px solid black;
+    width: 300px;
+    margin-left: 500px;
+    padding: 20px;
+    margin-top: 20px;
+}
